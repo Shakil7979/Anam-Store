@@ -1,0 +1,147 @@
+@media all and (min-width: 1200px){
+	.menu ul {
+		display: flex !important;
+	}
+}
+@media all and (max-width: 1200px){
+	.menu ul {
+		flex-direction: column;
+		justify-content: left !important; 
+		display: none;
+	}
+	.nav-icon{
+		display: block;
+	}
+	.logo {
+		text-align: center;
+		padding-top: 1rem;
+	}
+	.menu { 
+		justify-content: left; 
+	}
+	.haeder-area .col-xl-8 .row {
+		align-items: inherit !important;
+		flex-direction: column-reverse;
+	}
+	.menu-icon { 
+		justify-content: space-between;
+	}
+	.menu ul li {
+		 margin: 0 0;  
+	}
+	.menu ul ul { 
+		top: 1.5rem !important;
+		left:10rem; 
+	}
+	.menu-icon ul li a, .menu ul li a { 
+		transition: 0.3s; 
+	}
+}
+
+@media all and (max-width: 991px){
+	.banner { 
+		padding: 17rem 0;
+	}
+	.shope-item img { 
+		object-fit: cover;
+	}
+	.shope-item { 
+		height: 40rem; 
+	}
+	.shope-overlay { 
+		padding: 4rem; 
+	}
+	.section-title h2 {
+		margin-bottom: 3rem;
+	}
+	.footer-right {
+		margin-top: 2rem;
+	}
+	.footer-pay { 
+		justify-content: center;
+	}
+	.footer-left {
+		text-align: center;
+	}
+	.footer-left ul { 
+		justify-content: center;
+	}
+	.company {
+		padding: 10rem 0 0rem 0;
+	}
+	.company p { 
+		width: 100%;
+	}
+	.testimonials-two-item p { 
+		max-width: 74%; 
+	}
+	.testimonials-two-item { 
+		padding: 2rem 0; 
+	}
+	.team-area.section-padding {
+		padding: 4rem 0 13rem 0;
+	}
+	.team-area .col-md-3 { 
+		width: 50%;
+		margin-bottom: 3rem;
+	}
+	.team-overlay { 
+		bottom: -15%; 
+	}
+}	
+
+@media all and (max-width: 767px){
+	.banner h2 {
+		font-size: 4rem; 
+	}
+	.shope-overlay { 
+		padding: 2rem; 
+	}
+	.section-title h2 {
+		font-size: 3rem; 
+	}
+	.news-area.section-padding {
+		padding: 1rem 0 10rem 0;
+	}
+	.contact-area.section-padding {
+		padding: 10rem 0 6rem 0;
+	}
+	.testimonials-owl .owl-nav .owl-prev i, .products-owl .owl-nav .owl-prev i, .saller-owl .owl-nav .owl-prev i {
+		left: -1rem;
+	}
+	.testimonials-owl .owl-nav .owl-next i, .products-owl .owl-nav .owl-next i, .saller-owl .owl-nav .owl-next i {
+		right: -1rem;
+	}
+	.saller-btn { 
+		margin-bottom: 3rem; 
+	}
+	.team-area .col-md-3 { 
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+	.team-overlay {
+		bottom: -10%;
+	}
+}
+
+
+@media all and (max-width: 576px){
+	.banner {
+		padding: 17rem 0 3rem 0;
+	}
+	.banner-area .owl-nav {
+		display: none;
+	}
+	.section-padding {
+		padding: 2rem 0;
+	}
+	.news-area .section-title h2, .products-area .section-title h2 {
+		margin-bottom: 3rem;
+	}
+	.team-overlay {
+		bottom: -19%;
+	}
+	.contact-banner {
+		padding: 16rem 0 5rem 0;
+	}
+}

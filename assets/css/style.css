@@ -1,0 +1,1147 @@
+ 
+   /*********************************/
+  /***********1.GLOBAL CSS*********/
+ /********************************/
+ 
+body {
+    position: relative;
+    margin: 0; 
+    padding: 0; 
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+html {
+    font-size: 62.5%;
+    line-height: 25px;
+    line-height: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+h2{
+  font-size: 3rem;
+  font-weight: 700;
+}
+.btn-2,
+.btn-1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+  border: 0.1rem solid #fff;
+  transition: 0.3s;
+  text-transform: capitalize;
+}
+.btn-2:hover,
+.btn-1:hover{
+  background: #f42892;
+  color: #fff;
+  border:0.1rem solid transparent;
+}
+.section-padding{
+  padding: 4rem 0;
+} 
+.section-title{
+  text-align: center;
+}
+.section-title h2 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+
+   /*********************************/
+  /***********2.HEADER CSS**********/
+ /********************************/
+
+
+
+.haeder-area { 
+  background: #0000007d;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.about-header{
+  position: inherit;
+  background: #000;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+.menu ul {
+  display: flex;
+  font-size: ;
+  justify-content: flex-end;
+}
+.menu ul li{
+  margin: 0 2rem;
+  position: relative;
+}
+.menu-icon ul li a,
+.menu ul li a {
+  display: block ruby;
+  font-size: 18px;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  text-transform: capitalize;
+  transition: 0.3s;
+  padding: 1rem 0;
+}
+.menu-icon ul li a:hover,
+.menu ul li a.active,
+.menu ul li a:hover{
+  color: #f42892;
+}
+
+/*dropdown menu */
+
+.menu ul ul {
+  flex-direction: column;
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 99;
+}
+.menu ul ul li{
+  margin: 0;
+}
+.menu ul ul li a {
+  display: block ruby;
+  padding: 0.5rem 11rem 0.5rem 2rem;
+  color: #000;
+}
+.menu ul ul li a.active,
+.menu ul ul li a:hover{
+  background: #f42892;
+  color: #fff;
+}
+.menu ul li:hover > ul{
+  visibility: visible;
+  opacity: 1;
+  top: 57px;
+}
+/*menu icon*/
+
+.menu-icon ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.menu-icon ul li{
+  position: relative;
+}
+.menu-icon ul li:not(:last-child):after{
+  content: "|";
+  position: absolute;
+  top: 1rem;
+  right: -130%;
+  color:#fff;
+}
+.menu-icon ul li {
+  position: relative;
+  margin: 1rem 2rem;
+} 
+.menu-icon ul li:hover .lock-card{
+  visibility: visible;
+  opacity: 1;
+  top: 5.7rem;
+}
+.lock-card {
+  position: absolute;
+  top: 15rem;
+  background: #fff;
+  z-index: 99;
+  left: -900%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+.lock-card a{
+  margin: 2rem 0;
+  color: #555;
+  padding: 0 2rem;
+}
+.lock-card ul {
+  display: ;
+  font-size: ;
+  flex-direction: column;
+  background: #F4F4F4;
+  padding: 1rem 0;
+}
+.lock-card ul li{ 
+
+}
+.lock-card ul li a {
+  font-size: 1.4rem;
+  color: #555;
+  text-transform: capitalize;
+  transition: 0.3s;
+  margin: 0;
+  padding: 0;
+}
+.lock-card h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/*search area design*/
+
+.menu-icon ul li:hover .menu-search-card{
+  visibility: visible;
+  opacity: 1; 
+  left: -1500%;
+}
+.menu-search-card{ 
+  transition: 0.3s;  
+  z-index: 99;
+  background: #fff;
+  padding: 2rem;
+  position: absolute;
+  left: -500%;
+  top: 5.7rem;
+  visibility: hidden;
+  opacity: 0;
+}
+.menu-search{
+  display: flex;
+}
+.menu-search input[type="search"] {
+  padding: 0.8rem 2rem;
+  font-size: 1.6rem; 
+  border: 0.1rem solid #333;
+  border-radius: 2rem 0 2rem 0;
+
+}
+.menu-search button { 
+  border: none;
+  border-radius: 0 2rem 0 2rem;
+  padding: 0.8rem 3rem;
+  margin-left: 0.5rem;
+  font-weight: 500;
+  background: #555;
+  transition: 0.3s;
+  color: #fff;
+}
+.menu-search button:hover{
+  background: #f42892;
+}
+.menu-search-card p {
+  color: #333;
+  margin-top:1rem;
+}
+.menu-icon {
+  display: flex;
+  align-items: center;
+}
+.nav-icon {
+  font-size: 3rem;
+  color: #F42892; 
+  transition: 0.3s;
+  display: none;
+}
+
+
+
+   /*********************************/
+  /***********3.BANNER CSS**********/
+ /********************************/
+
+
+.banner-area{ 
+  position: relative;
+}
+.banner {
+  text-align: center;
+  padding: 21rem 0;
+}
+.banner h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.banner h2 {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4rem;
+  position: relative;
+}
+.shope-overlay h2:after,
+.banner h2:after{
+  content: "";
+  position: absolute;
+  width: 8%;
+  height: 0.1rem;
+  background: #fff;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -1.6rem;
+}
+.banner .btn-1{
+  margin-top: 2rem;
+} 
+.testimonials-owl .owl-nav .owl-prev i,
+.products-owl .owl-nav .owl-prev i,
+.saller-owl .owl-nav .owl-prev i,
+.banner-owl .owl-nav .owl-prev i {
+  position: absolute;
+  top: 45%;
+  left: 4rem;
+  font-size: 1.6rem;
+  background: #fff;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+  color: #000; 
+  transition: 0.3s;
+  border: 0.1rem solid #000;
+}
+.testimonials-owl .owl-nav .owl-next i,
+.products-owl .owl-nav .owl-next i,
+.saller-owl .owl-nav .owl-next i,
+.banner-owl .owl-nav .owl-next i {
+  position: absolute;
+  top: 45%;
+  right: 4rem;
+  font-size: 1.8rem;
+  background: #fff;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+  color: #000;  
+  transition: 0.3s;
+  border: 0.1rem solid #000;
+} 
+.testimonials-owl .owl-nav .owl-next i:hover,
+.testimonials-owl .owl-nav .owl-prev i:hover,
+.products-owl .owl-nav .owl-next i:hover,
+.products-owl .owl-nav .owl-prev i:hover,
+.saller-owl .owl-nav .owl-next i:hover,
+.saller-owl .owl-nav .owl-prev i:hover,
+.banner-owl .owl-nav .owl-next i:hover,
+.banner-owl .owl-nav .owl-prev i:hover{
+  color: #f42892; 
+}
+
+
+
+   /*********************************/
+  /***********4.SHOPE CSS**********/
+ /********************************/
+
+
+
+.shope-item {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+} 
+.shope-bg-color:hover .shope-item img{
+  transform: scale(1.15) rotate(4deg);
+}
+
+.shope-item img:hover{   
+  transform: scale(1.15) rotate(4deg); 
+  cursor: pointer; 
+}
+.shope-item img{ 
+  width: 100%;
+  height: 100%; 
+  transition: 0.5s;
+}
+.shope-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 7rem;
+  width: 70%;
+  margin: 0 auto;
+  right: 0;
+  background: rgba(221,108,141,0.9);
+  text-align: center;
+}
+.shope-bg-color {
+  background: rgba(110,181,50,0.9);
+}
+.shope-overlay h2 {
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: 700;
+  position: relative;
+  width: 79%;
+  margin: 0 auto 2rem auto;
+}
+.shope-overlay h2:after{
+  width: 20%;
+}
+.shope-overlay h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 3rem 0;
+  color: #ffff;
+}
+
+
+
+   /*********************************/
+  /***********5.SALLER CSS**********/
+ /********************************/
+
+
+
+.saller-area{
+  background: url('../images/saller/bg.jpg') no-repeat scroll center center / 100% 100%;
+}
+.saller-area .section-title h2 {
+  color: #ffff;
+  margin-bottom: 3rem;
+}
+.saller-btn {
+  text-align: center;
+  margin-bottom: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.saller-btn button {
+  border: 0.1rem solid #ffff;
+  padding: 0.8rem 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(255,255,255,0.5);
+  background: transparent;
+  transition: 0.3s;
+  margin: 0.5rem;
+} 
+.saller-btn button:hover{
+  color: #fff;
+}
+.saller-rating {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: #fff;
+}
+.saller-rating ul {
+  display: flex;
+}
+.saller-rating ul li i {
+  color: #caca11;
+}
+.saller-content p,
+.saller-rating p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f42892;
+}
+.saller-img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+.saller-img img{
+  width: 100%;
+  height: 100%; 
+}
+.saller-content {
+  text-align: center;
+  padding: 2rem;
+  background: #fff;
+}
+.saller-content a {
+  color: #555;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.saller-content a:hover{ 
+  color: #f42892;
+}
+.saller-icon-3 i,
+.saller-icon-2 i,
+.saller-icon-1 i {
+  background: #fff;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  color: #555;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 2.6rem;
+  transition: 0.3s;
+}
+.saller-icon-1 i{
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;   
+  line-height: 4rem;
+}
+.saller-icon-3 i{
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;   
+  line-height: 4rem;
+}
+.saller-icon-1 {
+  position: absolute;
+  top: 38%;
+  left: 42px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+.saller-icon-2 {
+  position: absolute;
+  top: 38%;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+.saller-icon-3 {
+  position: absolute;
+  top: 38%;
+  left: -38px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+.saller-hover i:hover{
+  background: #f42892;
+  color: #fff;
+}
+.saller-hover{
+  visibility: hidden;
+  opacity: 0;
+}
+.saller-img:hover .saller-icon-1 { 
+  top: 16%;
+  left: 42px;
+  visibility: visible;
+  opacity: 1;
+}
+.saller-img:hover .saller-icon-2 { 
+  top: 38%;
+  left: 0px;
+  visibility: visible;
+  opacity: 1;
+}
+.saller-img:hover .saller-icon-3 { 
+  top: 63%;
+  left: -38px;
+  visibility: visible;
+  opacity: 1;
+}
+.saller-eye{
+  display: none;
+}
+.saller-eye a {
+  
+}
+.saller-eye i { 
+  width: 7rem;
+  height: 7rem;
+  background:#fff;
+  color: #000;
+  font-size: 2rem;  
+  line-height: 5rem;
+  border-radius: 50%; 
+  padding: 0 1.5rem; 
+  position: absolute;
+  bottom: -63px;
+  right: -63px;
+  transition: 0.5s;
+}
+.saller-img:hover .saller-eye a i{ 
+  bottom: -24px;
+  right: -22px; 
+}
+.saller-eye i:hover{
+  color: #f42892;
+}
+.testimonials-owl .owl-nav .owl-next i,
+.products-owl .owl-nav .owl-next i,
+.saller-owl .owl-nav .owl-next i {
+  right: -2rem;
+}
+.testimonials-owl .owl-nav .owl-prev i , 
+.products-owl .owl-nav .owl-prev i , 
+.saller-owl .owl-nav .owl-prev i { 
+  left: -2rem;
+} 
+
+
+
+   /*********************************/
+  /***********6.PRODUCTS CSS********/
+ /********************************/
+
+.news-area .section-title h2,
+.products-area .section-title h2 { 
+  margin-bottom: 6rem;
+}
+.products-btn {
+  text-align: center;
+}
+.products-btn .btn-1 { 
+  color: #000;
+  border: 0.1rem solid #000;
+}
+.products-btn .btn-1:hover { 
+  color: #F42892;
+  border: 0.1rem solid #F42892;
+  background: transparent;
+}
+
+
+   /*********************************/
+  /**************7.NEWS CSS********/
+ /********************************/
+
+
+
+.news-img {
+  width: 100%;
+  height: auto;
+} 
+.news-img img{
+  width: 100%;
+  height: 100%;
+}
+ .news-content {
+  text-align: center;
+  padding: 2rem;
+}
+.news-content span {
+  color: #999;
+  font-size: 1.4rem;
+}
+.news-title {
+  color: #000;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 1.5rem 0;
+  transition: 0.3s;
+}
+.news-title:hover{
+  color: #f42892;
+}
+.news-btn .btn-2{
+  color: #999;
+  border: 0.1rem solid #999;
+  border-bottom: 0.1rem solid transparent;
+}
+.news-btn .btn-2:hover { 
+  color: #F42892;
+  border: 0.1rem solid #F42892;
+  background: transparent;
+  border-bottom: 0.1rem solid transparent;
+}
+
+.news-area.section-padding {
+  padding: 4rem 0 15rem 0;
+}
+
+
+
+   /*********************************/
+  /**************8.TESTI CSS********/
+ /********************************/
+
+
+.testi-img {
+  width: 100%;
+  height: auto;
+}
+.testi-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.testi-img img:hover{
+  cursor: pointer;
+  animation-name: push; 
+  animation-duration: 0.3s; 
+  animation-timing-function: linear; 
+  animation-iteration-count: 1;
+} 
+.testimonials-owl .owl-nav .owl-prev i,
+.testimonials-owl .owl-nav .owl-next i { 
+  top: 35%;
+} 
+.testimonials-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -18%;
+  left: 0;
+  z-index: 99;
+}
+.testimonilas-main-area { 
+  background: #fff;
+  border: 0.1rem solid #ddd;
+}
+
+
+   /*********************************/
+  /************9.CONTACT CSS********/
+ /********************************/
+
+
+.contact-area{
+  background: url('../images/contact/bg.jpg') no-repeat scroll center center / cover;
+  position: relative;
+}
+.contact-area::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(111, 111, 111, 0.5);
+}
+.contact-area.section-padding{
+  padding: 15rem 0 12rem 0;
+}
+.contact-area .section-title{
+  position: relative;
+  z-index: 999;
+}
+.contact-area .section-title h2{
+  color: #fff;
+}
+.contact-area .section-title p{
+  color: #fff; 
+  margin-bottom: 3rem;
+}
+.contact-main-area {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 999;
+}
+.contact-main-area input[type="email"] {
+  padding: 0.5rem;
+  width: 30%;
+  border: none;
+  background: rgba(255, 255, 255, 0.23);
+  color: #fff;
+}
+.contact-main-area button {
+  padding: 0.5rem 2rem;
+  text-transform: capitalize;
+  border: none;
+  background: #F42892;
+  color: #fff;
+  font-weight: 700;
+  outline: none;
+  margin-left: 1rem;
+}
+
+
+
+   /*********************************/
+  /************10.FOOTER CSS********/
+ /********************************/
+
+
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-pay {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.footer-menu li {
+  color: #555;
+}
+.footer-menu li a{
+  color: #555;
+  transition: 0.3s;
+}
+.footer-menu li a:hover{
+  color: #F42892;
+}
+.footer-pay li{
+  margin-right: 1rem;
+}
+.footer-left ul {
+  display: flex;
+  margin-top: 2.5rem;
+}
+.footer-left ul li{
+  margin-right: 1rem;
+}
+.footer-left ul li a i {
+  background: #000;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.footer-left ul li:nth-child(1) i{
+  background: #3F549A;
+}
+.footer-left ul li:nth-child(2) i{
+  background: #00C0FF;
+}
+.footer-left ul li:nth-child(3) i{
+  background: #345BDC;
+}
+.footer-left ul li:hover i{
+  color: #F42892;
+  transform: translateY(-15%);
+  box-shadow: 0px 15px 0px -2px #88828247;
+}
+
+
+
+
+/*=================== Multipage About Page Style =====================*/
+
+
+
+
+
+
+   /*********************************/
+  /************11.COMPANY CSS*******/
+ /********************************/
+
+
+
+.company {
+  padding: 5rem 0;
+}   
+.company h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+ .company p {
+  color: #555;
+  width: 50%;
+}
+
+
+
+   /*********************************/
+  /******12.TESTIMONIALS TWO CSS****/
+ /********************************/
+
+
+
+.testimonials-two-area{
+  background: url('../images/testi/bg.png') no-repeat scroll center center / cover;
+  position: relative;
+}
+.testimonials-two-area:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255,255,255,0.8);
+}
+.testimonials-two-item {
+  text-align: center;
+  padding: 4rem 0;
+  position: relative;
+  z-index: 99;
+}
+.testimonials-two-area h2 { 
+  font-size: 3rem;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase; 
+  text-align: center;
+  position: relative;
+  z-index: 99;
+  margin-top: 3rem;
+}
+.testimonials-two-item p {
+  color: #555;
+  line-height: 2.4rem;
+  max-width: 52%;
+  margin: 0 auto;
+}
+.testimonials-two-item a {
+  color: #555;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  transition: 0.3s;
+}
+.testimonials-two-item a:hover{
+  color: #236A00;
+}
+.testi-two-btn a {
+  padding: 1rem 4rem;
+  background: #236A00;
+  color: #fff;
+  margin: 0;
+  border: 0.2rem dashed transparent;
+  transition: 0.3s;
+  text-transform: capitalize;
+}
+.testi-two-btn a:hover{
+  border: 0.2rem dashed #236a00;
+  background: transparent;
+  color: #000;
+}
+
+
+
+   /*********************************/
+  /************13.TEAM CSS**********/
+ /********************************/
+
+
+
+ .team-img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+.team-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+
+}
+.team-overlay {
+  text-align: center;
+  position: absolute;
+  bottom: -20%;
+  width: 100%;
+  padding: 1.5rem;
+  left: 0;
+  background: #ffffffd6;
+  transition: 0.5s;
+}
+ .team-img:hover .team-overlay{
+    bottom: 0;
+ }
+.team-img img:hover{
+    transform: scale(1.2);
+ }
+.team-overlay a {
+  color: #555;
+  margin: 0.5rem 0;
+  transition: 0.3s;
+}
+.team-overlay a:hover{
+  color: #236A00;
+}
+.team-overlay p {
+  color: #999;
+  margin-bottom: 2rem;
+}
+.team-overlay ul {
+  display: flex;
+  justify-content: center;
+}
+.team-overlay ul li{
+  margin: 0 0.5rem
+}
+.team-overlay ul li a{}
+.team-overlay ul li a i {
+  font-size: 1.8rem;
+  width: 4rem;
+  height: 4rem;
+  text-align: center; 
+  line-height: 4rem;
+  border-radius: 50%;
+  background: #d7d7d7;
+  transition: 0.3s;
+}
+.team-overlay ul li a:hover i{
+  background: #236A00;
+  color: #fff;
+}
+.team-area.section-padding {
+  padding: 8rem 0 16rem 0;
+}
+.team-area .section-title {
+  margin-bottom: 4rem;
+}
+
+
+
+
+/*========================== MULTIPAGE CONTACT AREA CSS=====================*/
+
+
+
+   /*********************************/
+  /*****14.CONTACT BANNER CSS******/
+ /********************************/
+ 
+
+.contact-banner-area{
+  background: url('../images/contact/banner.jpg') no-repeat scroll center center / 100% 100% ;
+}
+.contact-banner {
+  padding: 16rem 0;
+}
+
+ 
+
+   /*********************************/
+  /*****15.CONTACT MAPS CSS******/
+ /********************************/
+ 
+
+ .contact-maps iframe{
+    width: 100%;
+    overflow: hidden;
+    height: 40rem;
+ }
+
+ 
+
+   /*********************************/
+  /*****16.CONTACT LIST CSS******/
+ /********************************/
+ 
+
+
+
+ .single-contact-list i {
+  font-size: 2.5rem;
+  color: #236A00;
+  margin-bottom: 1rem;
+}
+.single-contact-list h3 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+.single-contact-list h4 {
+  font-size: 2rem;
+}
+.single-contact-list p {
+  margin-top: 2rem;
+}
+.single-contact-list {
+  padding: 5rem;
+  border: 0.1rem solid #ddd;
+}
+.single-contact-list a {
+  font-size: 1.6rem; 
+  background: #236A00;
+  padding: 1rem 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 2rem;
+  color: #fff;
+  transition: 0.3s;
+}
+.single-contact-list a:hover{
+  background: #236A00BF;
+}
+
+
+
+   /*********************************/
+  /*****17.CONTACT LIST CSS******/
+ /********************************/
+
+
+
+.contact-form.section-padding {
+  padding-bottom: 12rem;
+}
+.form-right h3,
+.form-left h3 {
+  font-size: 2.5rem;
+  color: #000;
+}
+.form-left p {
+  margin: 1rem 0;
+}
+.form-left h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000;
+}
+.form-right h3{
+  margin-bottom: 2rem;
+}
+.form-right textarea,
+.single-input input[type="email"],
+.single-input input[type="text"] {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 0.1rem solid #ddd;
+  text-transform: capitalize;
+}
+.single-input input[type="submit"]{
+  padding: 1rem 5rem;
+  color: #ffff;
+  background: #236A00;
+  border: none;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.single-input input[type="submit"]:hover{
+  background: #236A00BF;
+}
+.form-right textarea{
+  height: 15rem;
+}
